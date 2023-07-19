@@ -9,7 +9,16 @@ JavaScript: Implemented for interactivity and adding dynamic functionalities to 
 Visual Studio Code: A powerful code editor used for developing and editing the project files.
 
 Installation
-Clone the repository: git clone https://github.com/your-username/gaming-dashboard.git
-Navigate to the project directory: cd gaming-dashboard
+Clone the repository: git clone https://github.com/T-neha/Bootstrap-gaming-dashboard.git
+Navigate to the project directory: cd Bootstrap-gaming-dashboard
 Open the project in Visual Studio Code or any code editor of your choice.
 Launch the index.html file in a web browser.
+
+Acknowledgements
+Bootstrap5 - A popular front-end framework.
+Font Awesome - Icon library used in the dashboard.
+Canva - Provider of high-quality images used for game cover photos.
+Visual Studio Code - An efficient code editor for web development.
+
+Thank You!:)
+"keep learning keep exploring"

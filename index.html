@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bootstap 5 Responsive Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-dark" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold border-bottom">
+                <i class="fas fa-user-secret me-2"></i>
+                <h6 style="font-size: 12px;">Company Name</h6>
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-solid fa-wallet me-2"></i>
+                    Wallet
+                    <i class="fas fa-solid fa-circle-arrow-right me-2"></i>
+                    <i class='fas fa-arrow-circle-right'></i>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text"><i
+                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-project-diagram me-2"></i>Pool</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i>Stake</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-shopping-cart me-2"></i>MarketPlace</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-shopping-cart me-2"></i>MetaDAO</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-gift me-2"></i>Stats</a>
+
+
+                <!-- <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                        class="fas fa-power-off me-2"></i>Logout</a> -->
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <!-- <h2 class="fs-2 m-0 float-right">Dashboard</h2> -->
+
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="fw-bold" href="#" style="color: aliceblue;">
+                                0x856382antnp689mptmaerharsh
+                            </a>
+
+                            <button class="btn btn-primary5">Logout</button>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row my-5">
+                    <ul>
+                        <a href="#">Home</a>
+                        <a href="#">Training NFTs</a>
+                        <a href="#">Auction NFTs</a>
+                        <a href="#">MyNFTs</a>
+                    </ul>
+                    <div class="col">
+
+                        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active c-item">
+                                    <img src="./images/4.png" class="d-block w-100 c-img" alt="Slide 1">
+                                    <div class="carousel-caption top-0 mt-4">
+                                        <!-- <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p> -->
+                                        <h1 class="display-1 fw-bolder text-capitalize">Fangs of Fury</h1>
+                                        <p class="display-2">45.32 USD</p>
+                                        <button class="btn btn-primary1">Buy Now</button>
+                                        <button class="btn btn-primary2">LEGENDARY</button>
+                                        <button class="btn btn-primary3">#7,101</button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item c-item">
+                                    <img src="./images/5.png" class="d-block w-100 c-img" alt="Slide 2">
+                                    <div class="carousel-caption top-0 mt-4">
+                                        <!-- <p class="text-uppercase fs-3 mt-5">The season has arrived</p> -->
+                                        <h1 class="display-1 fw-bolder text-capitalize">Fangs of Fury</h1>
+                                        <p class="display-2">45.32 USD</p>
+                                        <button class="btn btn-primary1">Buy Now</button>
+                                        <button class="btn btn-primary2">LEGENDARY</button>
+                                        <button class="btn btn-primary3">#7,101</button>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item c-item">
+                                    <img src="./images/6.png" class="d-block w-100 c-img" alt="Slide 3">
+                                    <div class="carousel-caption top-0 mt-4">
+                                        <h1 class="display-1 fw-bolder text-capitalize">Fangs of Fury</h1>
+                                        <p class="display-2">45.32 USD</p>
+                                        <button class="btn btn-primary1">Buy Now</button>
+                                        <button class="btn btn-primary2">LEGENDARY</button>
+                                        <button class="btn btn-primary3">#7,101</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
+                                data-bs-slide="prev" id="arrow-button1">
+                                <i class='fas fa-arrow-circle-left' aria-hidden="true" style='font-size:24px'></i>
+                                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel"
+                                data-bs-slide="next" id="arrow-button2">
+                                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                <i class='fas fa-arrow-circle-right' aria-hidden="true" style='font-size:24px'></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row g-3 my-2">
+
+                    <div class="viewall" style="display: flex;">
+                        <a href="#" style="color: aliceblue;">Trending Weapons</a>
+                        <button class="btn btn-primary6">View All</button>
+                    </div>
+
+                    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="card-group">
+
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/1.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">StingRay Rifle &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; #1099</h5>
+
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>45.32 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/11.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fangs Of Furry</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>15.5 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/14.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Circuit Breaker</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>48 MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/15.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Launcher</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>2.65MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="carousel-item">
+                                <div class="card-group">
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/1.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">StingRay Rifle &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; #1099</h5>
+
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>45.32 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 p-2">
+
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/11.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fangs Of Furry</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>15.5 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/14.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Circuit Breaker</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>48 MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/15.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Launcher</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>2.65MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev" id="arrow-button3">
+                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                            <i class='fas fa-arrow-circle-left' aria-hidden="true" style='font-size:24px'></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next" id="arrow-button4">
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                            <i class='fas fa-arrow-circle-right' aria-hidden="true" style='font-size:24px'></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p></p>
+
+                    <div class="viewall" style="display: flex;">
+                        <a href="#" style="color: aliceblue;">Trending Melle</a>
+                        <button class="btn btn-primary6">View All</button>
+                    </div>
+
+
+                    <div id="carouselExampleCaptions1" class="carousel carousel-dark slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="card-group">
+
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/16.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">StingRay Rifle &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; #1099
+                                                    </h5>
+
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>45.32 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/18.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fangs Of Furry</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>15.5 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/21.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Circuit Breaker</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>48 MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/3.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Launcher</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>2.65MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="carousel-item">
+                                <div class="card-group">
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/16.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">StingRay Rifle &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; #1099
+                                                    </h5>
+
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>45.32 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/18.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fangs Of Furry</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>15.5 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/21.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Circuit Breaker</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>48 MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/3.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Launcher</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>2.65MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+                            data-bs-slide="prev" id="arrow-button3">
+                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                            <i class='fas fa-arrow-circle-left' aria-hidden="true" style='font-size:24px'></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
+                            data-bs-slide="next" id="arrow-button4">
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                            <i class='fas fa-arrow-circle-right' aria-hidden="true" style='font-size:24px'></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <p></p>
+                    <div class="viewall" style="display: flex;">
+                        <a href="#" style="color: aliceblue;">Trending Character</a>
+                        <button class="btn btn-primary6">View All</button>
+                    </div>
+
+
+
+                    <div id="carouselExampleCaptions2" class="carousel carousel-dark slide" data-bs-ride="false">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="card-group">
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/7.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">StingRay Rifle &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp;
+                                                        #1099
+                                                    </h5>
+
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>45.32 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/9.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fangs Of Furry</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>15.5 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/1.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Circuit Breaker</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>48 MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/11.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Launcher</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>2.65MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="card-group">
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/7.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">StingRay Rifle &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp;
+                                                        #1099
+                                                    </h5>
+
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>45.32 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/9.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fangs Of Furry</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>15.5 USD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/1.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Circuit Breaker</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>48 MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3 p-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <img src="./images/11.png" alt="..." class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Launcher</h5>
+                                                    <p class="card-text">Best Price</p>
+
+                                                </div>
+                                                <div class="d-flex justify-content-around mb-2">
+                                                    <h4>2.65MLD</h4>
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                            data-bs-slide="prev" id="arrow-button3">
+                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                            <i class='fas fa-arrow-circle-left' aria-hidden="true" style='font-size:24px'></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                            data-bs-slide="next" id="arrow-button4">
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                            <i class='fas fa-arrow-circle-right' aria-hidden="true" style='font-size:24px'></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- <footer>
+        <div class="text-center mt-3">
+            <p class="mb-3 f-10 mt-2">2019 © Anup, All Rights Reserved</p>
+        </div>
+    </footer> -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>

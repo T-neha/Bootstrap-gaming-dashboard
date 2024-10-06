@@ -1,6 +1,8 @@
 This is a gaming dashboard project built using HTML5, CSS3, Bootstrap 5, JavaScript, and developed using Visual Studio Code. The dashboard provides a user-friendly interface to access and manage various gaming features and functionalities.
 This is Just User Interface Design.
 
+Project URL: https://t-neha.github.io/Bootstrap-gaming-dashboard/
+
 Technologies Used:
 HTML5: Used for creating the structure and layout of the web pages.
 CSS3: Used for styling the web pages and enhancing the visual appeal.
